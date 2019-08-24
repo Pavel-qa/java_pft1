@@ -1,22 +1,22 @@
-package ru.stqa.pft.sandbox;
+package ru.stqa.pft.sandbox.step3;
 
-public class MyFirstProgram {
+import ru.stqa.pft.sandbox.step3.Step3Rectangle;
+import ru.stqa.pft.sandbox.step3.Step3Square;
+
+public class Step3MyFirstProgram {
 
     public static void main(String[] args) {
-        hello("world");
-        hello("user");
-        hello("Alex");
+        hello("Step3");
 
-        Square s = new Square(5);
+        Step3Square s = new Step3Square(5);
         System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 
-        Rectangle r = new Rectangle(4, 6);
+        Step3Rectangle r = new Step3Rectangle(4, 6);
         System.out.println("Площадь треугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
     }
 
     public static void hello(String somebody) {
         System.out.println("Hello, " + somebody);
     }
-
 
 }
