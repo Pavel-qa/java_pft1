@@ -5,7 +5,12 @@ import org.openqa.selenium.WebDriver;
 import ru.stqa.pft.addressbook.model.GroupDate;
 
 public class GroupHelper {
-    protected WebDriver driver;
+
+    private WebDriver driver;
+
+    public GroupHelper(WebDriver driver) {
+        this.driver = driver;
+    }
 
     public void returnGroupPage() {
       driver.findElement(By.linkText("groups")).click();
